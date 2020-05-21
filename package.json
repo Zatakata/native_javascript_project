@@ -1,0 +1,30 @@
+{
+  "name": "nativejavascriptproject",
+  "version": "1.0.0",
+  "description": "creating a native javascript application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zatakata/native_javascript_project.git"
+  },
+  "keywords": [
+    "js",
+    "framework",
+    "frontend"
+  ],
+  "author": "Zatakata <zatakata1998@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zatakata/native_javascript_project/issues"
+  },
+  "homepage": "https://github.com/Zatakata/native_javascript_project#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
