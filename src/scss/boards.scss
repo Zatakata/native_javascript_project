@@ -1,0 +1,82 @@
+@import "variables";
+
+.boards {
+  &__favorites {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__all {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.boards {
+  width: 100%;
+  max-width: 825px;
+  margin: 0 auto;
+  &__title {
+    margin-top: 50px;
+    padding-left: 45px;
+    color: #172b4d;
+    font-size: 16px;
+    position: relative;
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+    }
+  }
+}
+
+.board {
+  display: block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: inherit;
+  width: 23%;
+  height: 95px;
+  padding: 10px;
+  background-color: rgb(0, 121, 191);
+  border-radius: 5px;
+  position: relative;
+  &:hover {
+    background-color: darken(rgb(0, 121, 191), 3);
+  }
+  &--create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4f0f6;
+    color: #172b4d;
+    font-size: 16px;
+    &:hover {
+      background-color: darken(#e4f0f6, 5);
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+  }
+  &__mark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    &.active {
+      color: gold;
+    }
+    span {
+      cursor: pointer;
+      transition: font-size .5s;
+      &:hover {
+        font-size: 28px;
+      }
+
+    }
+  }
+}

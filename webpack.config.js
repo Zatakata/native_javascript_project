@@ -68,6 +68,13 @@ module.exports = {
   ],
   module: {
     rules: [
+      // {
+      //       //   test: /\.(jpg|png|svg)$/,
+      //       //   loader: 'file-loader',
+      //       //   options: {
+      //       //     name: 'images/[name].[ext]'
+      //       //   }
+      //       // },
       {
         test: /\.s[ac]ss$/i,
         use: [

@@ -5,10 +5,75 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <title>Javascript native app</title>
 </head>
 <body>
+    <div id="app" class="container">
+        <div class="home">
+            <header class="header">
+                <a href="#" class="header__home">
+                    <span class="material-icons">home</span>
+                </a>
+                <a href="#" class="header__logo"><img src="https://a.trellocdn.com/prgb/dist/images/header-logo-2x.01ef898811a879595cea.png" alt="logo"></a>
+            </header>
 
-    <div id="app" class="container"></div>
+            <section class="boards">
+                <h2 class="boards__title">
+                    <span class="material-icons">star_border</span>
+                    Отмеченные доски
+                </h2>
+                <div class="boards__favorites">
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark active">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark active">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                </div>
+
+                <h2 class="boards__title">
+                    <span class="material-icons">person</span>
+                    Персональные доски
+                </h2>
+                <div class="boards__all">
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                    <a href="#" class="board">
+                        <h3 class="board__title">Основная</h3>
+                        <button class="board__mark">
+                            <span class="material-icons">star_border</span>
+                        </button>
+                    </a>
+                    <a href="#" class="board board--create">
+                        Создать доску
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
